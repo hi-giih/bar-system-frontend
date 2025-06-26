@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# 📑 Sistema de comandas - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o **Frontend** do sistema de comandas, uma aplicação voltada para o controle e organização de pedidos em estabelecimentos como bares e restaurantes.
 
-Currently, two official plugins are available:
+> 🚧 **Este projeto ainda está em desenvolvimento.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação foi construída utilizando **React com TypeScript**, **Vite** como bundler, e diversas ferramentas modernas para garantir uma boa experiência de desenvolvimento e usabilidade.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 💻 Tecnologias e Ferramentas Utilizadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Vite** - Ambiente de desenvolvimento rápido e moderno
+- **TypeScript** - Tipagem estática para maior segurança
+- **React Router** - Gerenciamento de rotas SPA
+- **Ant Design (AntD)** - Componentes prontos e responsivos
+- **Styled Components** - Estilização com CSS-in-JS
+- **Figma** - Prototipação e design de telas
+- **Axios** - Requisições HTTP
+- **React Context** - Gerenciamento de estado leve
+- **Redux** - Gerenciamento global de estado
+- **ESLint + Prettier** - Padronização de código
+- **React Testing Library + Jest** - Testes automatizados
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
+## 🆗 Roadmap
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+   | Fase | Descrição |
+   |------|-----------|
+[ ]| **Fase 1** | Preparação e base do projeto (configs iniciais, rotas base, arquitetura) |
+[ ]| **Fase 2** | Criação das rotas e estrutura básica das páginas |
+[ ]| **Fase 3** | Funcionalidade de **Clientes** (listagem, cadastro, edição) |
+[ ]| **Fase 4** | Funcionalidade de **Produtos** (listagem, criação, valores) |
+[ ]| **Fase 5** | Comandas: tela **Home** e funcionalidade de **criação de comanda** |
+[ ]| **Fase 6** | Tela de **detalhamento da comanda**, consumo e atualização |
+[ ]| **Fase 7** | Finalizações, responsividade, refatorações e testes |
+
+---
+
+## 🚀 Instalando e Rodando o Projeto
+
+
+1. Clone este repositório:
+```
+git clone https://github.com/hi-giih/bar-system-frontend.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+2. Acesse o diretório do projeto:
 ```
+cd bar-system-frontend
+```
+
+3. Instale as dependências:
+```
+pip install -r requeriments.txt
+```
+
+4. Execute a aplicação:
+```
+npm run dev
+# ou
+yarn dev
+```
+
+## ⚙ Teste
+Para rodar os testes unitários: npm test
+
+## 🔗 Integração com o Backend
+Este frontend se comunica com a API disponível neste repositório:
+👉 bar-system-backend
+
+Certifique-se de que o backend esteja rodando localmente ou disponibilizado em algum servidor.
+
+## 📜 Contribuições
+Projeto criado por Giovanna Santos (@hi-giih).
